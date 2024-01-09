@@ -7,7 +7,7 @@ const traductoresRouter = express.Router();
 traductoresRouter.post('/translate', async (req, res) => {
   try {
     const { contenido } = req.body;
-    const authKey = '00fbeb47-2abe-42bc-b5d1-a67dea4482b3:fx';
+    const authKey = '';
 
     const translationResults = await Promise.all(
       contenido.map(async (text) => {
